@@ -3,7 +3,6 @@
 #include <math.h>
 
 #define tMax 1
-//#define dt .05
 #define dx (M_PI/10)
 #define xf M_PI
 #define xi 0
@@ -26,7 +25,6 @@ heat_implicit()
 {
     int N = (int)((xf-xi)/dx), M = (int)(tMax/dt);
     double u[M+1][N+1];
-    //double lambda = D*dt/dx/dx;
     double a = 1 + 2*lambda, b = -lambda, c = -lambda;
     double alpha[N],g[N];
 
