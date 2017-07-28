@@ -3,7 +3,7 @@
 #include <math.h>
 
 #pragma warning(disable:4996)
-
+// created by Arya HajiTaheri
 #define tMax 1
 //M_PI works fine in codeblocks
 #define dx (M_PI/10)
