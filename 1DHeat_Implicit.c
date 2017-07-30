@@ -43,7 +43,7 @@ void heat_implicit(){
     alpha[1] = a;
     for(t=1; t<=M; t++)  {
         g[1] = u[t-1][1];
-        for(i=2; i<N; i++) {
+        for(i=1; i<N; i++) {
             alpha[i] = a - c*b/alpha[i-1];
             g[i] = u[t-1][i] - b/alpha[i-1]*g[i-1];
         }
